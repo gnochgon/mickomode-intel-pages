@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Privacy policy · mickomode-intel</title>
+  <meta name="description" content="Privacy policy of mickomode-intel, a personal, single-user, read-only YouTube analytics tool." />
+  <link rel="icon" type="image/svg+xml" href="mark.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" stroke="#4FD1E0" stroke-opacity="0.55" stroke-width="1.5"/><path d="M8 22.5l5.5-6 4 3.5 7-9.5" stroke="#4FD1E0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="brand">MICKOMODE<small>INTEL</small></div>
+  </header>
+
+  <h1>Privacy policy</h1>
+  <p class="meta">mickomode-intel · last updated 23 October 2026</p>
+
+  <p>mickomode-intel is a personal, single-user tool. The creator of the mickomode YouTube channel built it for himself and is its only user. It is not offered to anyone else.</p>
+
+  <h2>What it accesses</h2>
+  <p>After the channel owner signs in with Google, the tool uses YouTube API Services with two read-only permissions:</p>
+  <ul>
+    <li><code>youtube.readonly</code>: the channel's name and subscriber count, its videos, and their titles, publish dates, durations, views, likes and comments.</li>
+    <li><code>yt-analytics.readonly</code>: YouTube Analytics reports for the channel (watch time, average view duration, average percentage viewed, subscribers gained, shares, traffic sources) and YouTube's daily reach reports (thumbnail impressions and click-through rate).</li>
+  </ul>
+  <p>It cannot post, upload, edit, delete, comment or change any settings. It does not access any other Google data, and no data about viewers as individuals.</p>
+
+  <h2>How it is used</h2>
+  <p>The statistics are shown to the channel owner in a dashboard on his own computer, compared with his own averages, and summarised to help him decide what to make next. The owner may also ask an AI assistant (Anthropic's Claude, under the owner's own account) to analyse these statistics for him. That is the owner's own use of his own channel's data; the data is not published or given to anyone else.</p>
+
+  <h2>Where it is stored</h2>
+  <p>Everything stays on the owner's computer: the statistics in local files and a local database, and the sign-in token in a local file that is never shared. The tool has no server, no website login, and no cloud database. These pages are the only public part, and they collect nothing: no cookies, no analytics, no third-party requests.</p>
+
+  <h2>Sharing</h2>
+  <p>Nothing is sold, shared, rented or used for advertising.</p>
+
+  <h2>Keeping and deleting data</h2>
+  <p>The data is kept only as long as the owner finds it useful. The owner can delete it at any time, and deletes it when he stops using the tool.</p>
+
+  <h2>How to revoke access</h2>
+  <ul>
+    <li>Go to <a href="https://myaccount.google.com/permissions">Google Account → Third-party apps &amp; services</a>, select <strong>mickomode-intel</strong> and choose <strong>Delete all connections</strong> / <strong>Remove access</strong>. The tool can no longer read anything from that moment.</li>
+    <li>On the owner's computer, <code>python -m src.youtube_channel.auth --logout</code> deletes the stored sign-in token.</li>
+  </ul>
+
+  <h2>Google and YouTube policies</h2>
+  <p>This tool uses YouTube API Services. By authorising it you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:chronveljournal@gmail.com">chronveljournal@gmail.com</a>.</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms of service</a>
+  </nav>
+</main>
+</body>
+</html>
